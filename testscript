@@ -1,0 +1,79 @@
+import bpy
+
+black_king = bpy.context.scene.objects["BlackKing"]
+white_king = bpy.context.scene.objects["WhiteKing"]
+
+black_queen = bpy.context.scene.objects["BlackQueen"]
+white_queen = bpy.context.scene.objects["WhiteQueen"]
+
+black_bishop_1 = bpy.context.scene.objects["BlackBishop.001"]
+black_bishop_2 = bpy.context.scene.objects["BlackBishop.002"]
+white_bishop_1 = bpy.context.scene.objects["WhiteBishop.001"]
+white_bishop_2 = bpy.context.scene.objects["WhiteBishop.002"]
+
+black_knight_1 = bpy.context.scene.objects["BlackKnight.001"]
+black_knight_2 = bpy.context.scene.objects["BlackKnight.002"]
+white_knight_1 = bpy.context.scene.objects["WhiteKnight.001"]
+white_knight_2 = bpy.context.scene.objects["WhiteKnight.002"]
+
+black_rook_1 = bpy.context.scene.objects["BlackRook.001"]
+black_rook_2 = bpy.context.scene.objects["BlackRook.002"]
+black_rooks = [black_rook_1, black_rook_2]
+
+white_rook_1 = bpy.context.scene.objects["WhiteRook.001"]
+white_rook_2 = bpy.context.scene.objects["WhiteRook.002"]
+white_rooks = [white_rook_1, white_rook_2]
+
+
+
+black_pawn_1 = bpy.context.scene.objects["BlackPawn.001"]
+black_pawn_2 = bpy.context.scene.objects["BlackPawn.002"]
+black_pawn_3 = bpy.context.scene.objects["BlackPawn.003"]
+black_pawn_4 = bpy.context.scene.objects["BlackPawn.004"]
+black_pawn_5 = bpy.context.scene.objects["BlackPawn.005"]
+black_pawn_6 = bpy.context.scene.objects["BlackPawn.006"]
+black_pawn_7 = bpy.context.scene.objects["BlackPawn.007"]
+black_pawn_8 = bpy.context.scene.objects["BlackPawn.008"]
+black_pawns = [black_pawn_1, black_pawn_2, black_pawn_3, black_pawn_4, black_pawn_5, black_pawn_6, black_pawn_7, black_pawn_8]
+
+white_pawn_1 = bpy.context.scene.objects["WhitePawn.001"]
+white_pawn_2 = bpy.context.scene.objects["WhitePawn.002"]
+white_pawn_3 = bpy.context.scene.objects["WhitePawn.003"]
+white_pawn_4 = bpy.context.scene.objects["WhitePawn.004"]
+white_pawn_5 = bpy.context.scene.objects["WhitePawn.005"]
+white_pawn_6 = bpy.context.scene.objects["WhitePawn.006"]
+white_pawn_7 = bpy.context.scene.objects["WhitePawn.007"]
+white_pawn_8 = bpy.context.scene.objects["WhitePawn.008"]
+white_pawns = [white_pawn_1, white_pawn_2, white_pawn_3, white_pawn_4, white_pawn_5, white_pawn_6, white_pawn_7, white_pawn_8]
+
+grid_len = 1
+z_coor = 1.78421
+fen = "1B1R4-6r1-3B2k1-7Q-R1rK4-1p2N3-8-2n1nb2"
+
+
+C = bpy.context
+src_obj = bpy.data.objects['WhitePawn.001']
+cur_obj = src_obj.copy()
+cur_obj.data = src_obj.data.copy
+cur_obj.animation_data_clear()
+
+cur_obj.location = (0,0,z_coor)
+
+
+cur_x = -3.5
+cur_y = 3.5
+'''
+for c in fen:
+    if c == '-': 
+        cur_x = -3.5
+        cur_y += 1
+    if c.isdigit():
+        cur_x += c
+    if c.isupper():
+        
+        cur_x += 1
+     if c.isupper():
+        a
+        cur_x += 1   
+'''    
+    
