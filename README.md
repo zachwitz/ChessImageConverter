@@ -1,1 +1,3 @@
 # ChessImageConverter
+
+There are 4 Colab notebooks and 1 python script in this folder. The FinalProject notebook is our main file. If you run every cell, it will take you from an input image of a physical board, convert it to a digital version, and give engine move recommendations. The input image can also be changed if you so wish. The rest of the files were used to create the FinalProject file. The testscript file was used in Blender to move the chess piece renders to fit to a variety of FENs from lichess puzzles in order to create our dataset. TrainModel was used to train and test the CNN, and the other 2 colab notebooks were used to crop the board renders to create the training and testing data.
